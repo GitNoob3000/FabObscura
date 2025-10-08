@@ -5,19 +5,18 @@ Published at **ACM UIST 2025**
 
 [Project Page →](https://hcie.csail.mit.edu/research/fabobscura/fabobscura.html)
 
----
 
 <p align="center">
-  <img src="images/car-parallax.gif" width="32%"/>
-  <img src="images/coaster.gif" width="32%"/>
-  <img src="images/croc-jar.gif" width="32%"/>
+  <img src="images/car-parallax.gif" height="135px"/>
+  <img src="images/coaster.gif" height="135px"/>
+  <img src="images/croc-jar.gif" height="135px"/>
 </p>
 
----
+
 
 ## Overview
 
-**FabObscura** introduces a computational system for designing and fabricating *interactive barrier-grid animations* — extending beyond traditional straight-line barriers to support curved, radial, and multi-directional patterns.
+**FabObscura** introduces a computational system for designing and fabricating *interactive barrier-grid animations*. It extends beyond traditional straight-line barriers to support curved, radial, and multi-directional patterns. FabObscura supports sliding, rotational, and view-dependent barrier-grid animations.
 
 This repository contains:
 - `fabobscura_server.py` — the Python server that generates barrier-grid patterns and composites.
