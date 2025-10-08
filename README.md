@@ -8,9 +8,9 @@ Published at **ACM UIST 2025**
 ---
 
 <p align="center">
-  <img src="car-parallax.gif" width="32%"/>
-  <img src="coaster.gif" width="32%"/>
-  <img src="croc-jar.gif" width="32%"/>
+  <img src="images/car-parallax.gif" width="32%"/>
+  <img src="images/coaster.gif" width="32%"/>
+  <img src="images/croc-jar.gif" width="32%"/>
 </p>
 
 ---
@@ -65,21 +65,16 @@ The Processing interface communicates with the Python server to generate barrier
 
 ---
 
-## File Structure
-```
-FabObscura/
-│
-├── fabobscura_server.py        # Main Flask backend
-├── fabobscura_ui/              # Processing front-end
-│   ├── data/                   # Output composites & patterns
-│   ├── libraries/              # Required Processing libs (optional)
-│   └── *.pde                   # Processing sketch files
-├── assets/
-│   ├── car-parallax.gif
-│   ├── coaster.gif
-│   └── croc-jar.gif
-└── README.md
-```
+## Using Your Own Animation Files
+
+To use your own animation sequence:
+
+1. Export your animation as **individual image frames** (e.g., PNG or JPG).  
+2. Place all frames for one animation into a **single folder** inside `fabobscura_ui/data/`.  
+3. Each folder should contain only the frames for a single animation.  
+4. You can refer to the existing folders in `fabobscura_ui/data/` as examples.
+
+The system will automatically read and interlace all images in the selected folder to generate the barrier-grid composite.
 
 ---
 
@@ -101,11 +96,3 @@ If you use this software or build upon this work, please cite:
 }
 ```
 
----
-
-## Acknowledgements
-
-Developed by the **MIT CSAIL HCI Engineering Group**.  
-For more information, visit the [project page](https://hcie.csail.mit.edu/research/fabobscura/fabobscura.html).
-
----
