@@ -1,5 +1,3 @@
-import processing.pdf.*;
-
 import controlP5.*;
 import java.io.File;
 import java.util.*;

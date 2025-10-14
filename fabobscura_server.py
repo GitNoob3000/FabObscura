@@ -1,6 +1,4 @@
 import argparse
-import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
 import os
 import numpy as np
 import cv2
@@ -12,8 +10,6 @@ import re
 import io
 from PIL import Image, ImageChops
 import sympy as sp
-from sympy import Piecewise
-from urllib.parse import unquote
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 

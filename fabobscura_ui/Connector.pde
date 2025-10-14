@@ -1,21 +1,21 @@
 class Connector {
-  UIBox from, to;
+  UIBox startpoint, endpoint;
   boolean arrow;
   float x,y; 
 
-  Connector(UIBox from, UIBox to, boolean arrow) {
-    this.from = from;
-    this.to = to;
+  Connector(UIBox startpoint, UIBox endpoint, boolean arrow) {
+    this.startpoint = startpoint;
+    this.endpoint = endpoint;
     this.arrow = arrow;
   }
 
   void display() {
     stroke(100);
     strokeWeight(2);
-    float x1 = from.x + from.w / 2;
-    float y1 = from.y;
-    float x2 = to.x - to.w / 2;
-    float y2 = to.y;
+    float x1 = startpoint.x + startpoint.w / 2;
+    float y1 = startpoint.y;
+    float x2 = endpoint.x - endpoint.w / 2;
+    float y2 = endpoint.y;
 
     line(x1, y1, x2, y2);
 
